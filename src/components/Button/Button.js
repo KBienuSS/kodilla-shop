@@ -9,7 +9,7 @@ const Button = (props) => {
         console.log('Summary');
         console.log('==========');
         console.log('Name:',props.name,);
-        console.log('Price:',props.price(),);
+        console.log('Price:',props.price,);
         console.log('Size:',props.size,);
         console.log('Color:',props.color,);
     };
@@ -21,7 +21,7 @@ Button.propTypes = {
     size:PropTypes.string,
     color:PropTypes.string,
     name:PropTypes.string,
-    price:PropTypes.func,
+    price:PropTypes.number,
     className:PropTypes.string,
     children:PropTypes.object
 }

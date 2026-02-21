@@ -19,7 +19,7 @@ const ProductForm = props => {
             className={styles.button} 
             name={props.name} 
             size={props.size} 
-            price={props.priceFunction} 
+            price={props.price} 
             color={props.color}>
             <span className="fa fa-shopping-cart" />
           </Button>
@@ -35,7 +35,7 @@ ProductForm.propTypes = {
     colors:PropTypes.array,
     setColor:PropTypes.func,
     name:PropTypes.string,
-    priceFunction:PropTypes.func
+    price:PropTypes.number
 }
 
 export default ProductForm;
